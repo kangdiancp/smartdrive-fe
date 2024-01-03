@@ -8,6 +8,7 @@ import { ClayInput } from '@clayui/form';
 import ClayManagementToolbar from '@clayui/management-toolbar';
 import { useNavigate, useLocation } from "react-router-dom";
 import DropDown from '@clayui/drop-down';
+import { ClayPaginationBarWithBasicItems } from '@clayui/pagination-bar';
 
 
 
@@ -18,6 +19,9 @@ export default function Category() {
   const [category, setCategory] = useState([]);
   const [refresh, setRefresh] = useState(false);
   const [keyValue, setKeyValue] = useState({ search: '' });
+  const [delta, setDelta] = useState(8);
+  const [activePage, setActivePage] = useState(1);
+  const totalItems = category.length;
 
   const { paramCategory } = useLocation();
 
@@ -220,6 +224,13 @@ export default function Category() {
           }
         </Body>
       </Table>
+      <ClayPaginationBarWithBasicItems
+        activeDelta={delta}
+        setActivePage={activePage}
+        onDeltaChange={setDelta}
+        onPageChange={setActivePage}
+        totalItems={totalItems}
+      />
     </div>
   )
 }
