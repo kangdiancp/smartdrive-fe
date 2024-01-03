@@ -5,6 +5,8 @@ import MasterLayout from '../layout/MasterLayout'
 import Category from '../pages/master/Category'
 import City from '../pages/master/City'
 import Profile from '../pages/user/Profile'
+import AddCategory from '../pages/master/AddCategory'
+import EditCategory from '../pages/master/EditCategory'
 
 export default function Routes() {
     return useRoutes([
@@ -13,10 +15,8 @@ export default function Routes() {
             element: <MasterLayout />,
             children: [
                 {path : 'category',element : <Category/>},
-                {path : 'city',element : <City />,
-                children:[{
-                    path : 'lev2', element : <Category />
-                }]}
+                {path : 'category/add',element : <AddCategory />},
+                {path : 'category/edit',element : <EditCategory />}
             ]
         },
         {

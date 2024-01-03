@@ -16,9 +16,9 @@
     "@clayui/data-provider": "^3.1.0",
     "@clayui/date-picker": "^3.1.1",
     "@clayui/drop-down": "^3.4.0",
-    "@clayui/icon": "^3.106.0",
     "@clayui/empty-state": "^3.0.0",
     "@clayui/form": "^3.6.0",
+    "@clayui/icon": "^3.106.0",
     "@clayui/label": "^3.1.1",
     "@clayui/layout": "^3.106.1",
     "@clayui/link": "^3.1.0",
@@ -46,10 +46,11 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^12.1.1",
     "@testing-library/user-event": "^12.5.0",
+    "axios": "^1.6.3",
     "react": "16.8.6",
     "react-dom": "16.8.6",
-    "react-scripts": "5.0.1",
     "react-router-dom": "^6.2.1",
+    "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
